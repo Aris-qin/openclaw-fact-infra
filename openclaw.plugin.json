@@ -1,0 +1,46 @@
+{
+  "id": "fact-infra",
+  "name": "Fact Infrastructure",
+  "description": "Fact infrastructure v3",
+  "version": "3.0.1",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "workRoot": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "indexPath": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "staleDays": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "sqliteTimeoutMs": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "required": [
+      "workRoot",
+      "indexPath"
+    ],
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "fact_create",
+      "fact_read",
+      "fact_plan",
+      "fact_record",
+      "fact_finish"
+    ]
+  }
+}

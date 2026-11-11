@@ -1,0 +1,112 @@
+{
+  "work": [
+    {
+      "id": "w",
+      "slug": "s",
+      "name": "名字",
+      "purpose": "purpose",
+      "kind": "light",
+      "status": "active",
+      "revision": 10,
+      "root_items_version": 0,
+      "created_at": "t",
+      "updated_at": "t"
+    }
+  ],
+  "items": [
+    {
+      "id": "g",
+      "kind": "goal",
+      "parent_id": null,
+      "title": "目标",
+      "description": null,
+      "status": "awaiting_confirmation",
+      "position": 0,
+      "version": 2,
+      "children_version": 0,
+      "completed_at": null,
+      "removed_at": null,
+      "legacy_payload": null,
+      "created_at": "t",
+      "updated_at": "2026-11-10T12:42:59.055704Z"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "python-plan",
+      "kind": "plan",
+      "payload_json": "[{\"item_id\":\"g\",\"op\":\"update\",\"title\":\"新目标\"}]",
+      "base_versions_json": "{\"items\":{\"g\":[1,0,null]},\"parents\":[],\"root\":null}",
+      "review_summary": null,
+      "status": "pending",
+      "source_session": null,
+      "confirmation_json": null,
+      "created_at": "t",
+      "applied_at": null
+    },
+    {
+      "id": "fd02c09e-b515-4d20-bd3e-fcf86268637e",
+      "kind": "completion",
+      "payload_json": "{\"mode\":\"complete\",\"open_issues\":[],\"open_items\":[{\"id\":\"g\",\"kind\":\"goal\",\"status\":\"awaiting_confirmation\",\"title\":\"目标\"}],\"prior_status\":\"planned\",\"target_id\":\"g\",\"target_type\":\"goal\"}",
+      "base_versions_json": "{\"digest\":\"a47a8e0d5a7b1e460441c4f47d682464e5c3a36b42b66e96294cedc87868b42f\"}",
+      "review_summary": "completion summary",
+      "status": "pending",
+      "source_session": null,
+      "confirmation_json": null,
+      "created_at": "2026-11-10T12:42:59.056029Z",
+      "applied_at": null
+    }
+  ],
+  "plan_ready": {
+    "work": [
+      {
+        "id": "w",
+        "slug": "s",
+        "name": "名字",
+        "purpose": "purpose",
+        "kind": "light",
+        "status": "active",
+        "revision": 10,
+        "root_items_version": 0,
+        "created_at": "t",
+        "updated_at": "t"
+      }
+    ],
+    "items": [
+      {
+        "id": "g",
+        "kind": "goal",
+        "parent_id": null,
+        "title": "目标",
+        "description": null,
+        "status": "planned",
+        "position": 0,
+        "version": 1,
+        "children_version": 0,
+        "completed_at": null,
+        "removed_at": null,
+        "legacy_payload": null,
+        "created_at": "t",
+        "updated_at": "t"
+      }
+    ],
+    "proposals": [
+      {
+        "id": "python-plan",
+        "kind": "plan",
+        "payload_json": "[{\"item_id\":\"g\",\"op\":\"update\",\"title\":\"新目标\"}]",
+        "base_versions_json": "{\"items\":{\"g\":[1,0,null]},\"parents\":[],\"root\":null}",
+        "review_summary": null,
+        "status": "pending",
+        "source_session": null,
+        "confirmation_json": null,
+        "created_at": "t",
+        "applied_at": null
+      }
+    ]
+  },
+  "completion_id": "fd02c09e-b515-4d20-bd3e-fcf86268637e",
+  "relevant": {
+    "digest": "a47a8e0d5a7b1e460441c4f47d682464e5c3a36b42b66e96294cedc87868b42f"
+  }
+}

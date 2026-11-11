@@ -1,0 +1,45 @@
+{
+  "name": "openclaw-plugin-fact-infra",
+  "version": "3.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/test/*.test.js",
+    "plugin:build": "node esbuild.config.mjs",
+    "validate": "openclaw plugins validate --entry ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "esbuild": "^0.25.0"
+  },
+  "files": [
+    "dist/index.js",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "openclaw": ">=2026.5.17"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "private": true,
+  "description": "OpenClaw fact-infra v2: five tools for SQLite-backed project and lightweight work management",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aris-qin/openclaw-fact-infra.git"
+  },
+  "homepage": "https://github.com/Aris-qin/openclaw-fact-infra",
+  "engines": {
+    "node": ">=24.16.0"
+  }
+}
