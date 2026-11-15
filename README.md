@@ -91,3 +91,7 @@ npm pack
 - 本补丁强化显式parent_id校验，不扩展schema、公开工具集、依赖版本或旧数据迁移。
 
 Python来源与兼容基线来自 [hermes-fact-infra v2.1.0](https://github.com/Aris-qin/hermes-fact-infra/tree/v2.1.0)；本仓库是Node/OpenClaw适配实现。发布变更见 [CHANGELOG.md](CHANGELOG.md)。
+
+## Offline maintenance
+
+Optional Python migration and central-handoff helpers and synthetic regression tests are available under [`maintenance/`](maintenance/README.md). They are separate from the Node runtime bundle, do not publish work files, and do not automatically prune missing registrations. No project databases, deployment logs, backups or credentials are included.

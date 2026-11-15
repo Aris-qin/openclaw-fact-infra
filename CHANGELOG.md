@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Add optional offline Python migration/verification and central-handoff helpers with synthetic regression tests; keep them separate from the Node runtime bundle.
+- Fix table-scoped legacy IDs in parentless-task verification: nested goal IDs no longer hide unrelated root tasks with the same numeric ID.
+- Document non-destructive catalog maintenance; no automatic pruning of missing paths.
+- No change to plugin version, schema, runtime bundle or public tool contracts.
+
 ## 3.0.1 — openclaw-fact-infra v2
 
 - 产品发行名为openclaw-fact-infra v2；插件包沿用3.x版本序列，schema保持v3。

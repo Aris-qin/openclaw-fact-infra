@@ -9,3 +9,12 @@ dist/*
 .env.*
 delivery-logs/
 verification/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+backups/
