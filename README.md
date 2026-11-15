@@ -9,7 +9,7 @@
 - **数据库 schema：v3**（`PRAGMA user_version=3`），本次补丁不修改schema、不自动迁移业务库。
 - 插件ID仍为 `fact-infra`，npm包名仍为 `openclaw-plugin-fact-infra`；不会引入第二套工具名或第二份项目库。
 - 支持 Node **24.16+（24.x）或26.1+**；OpenClaw **>=2026.5.17**。使用宿主的 `openclaw/plugin-sdk/tool-plugin` 和 Node 内建SQLite，无第三方运行时依赖。
-- 本仓库默认私有。package设置 `private: true` 防止误发npm；发行包由GitHub Releases提供，不执行npm publish。
+- 本仓库公开提供插件源码、合成测试及通用维护工具，不包含真实项目数据库、备份、凭据或本机运行日志。package 保留 `private: true` 防止误发 npm；发行包通过 GitHub Releases 获取，ClawHub 发布需单独通过校验。
 
 ## 五个工具
 
@@ -27,7 +27,7 @@
 
 ## 获取与安装
 
-从本仓库 [Releases](https://github.com/Aris-qin/openclaw-fact-infra/releases) 下载 `openclaw-plugin-fact-infra-3.0.1.tgz` 和 `SHA256SUMS`。私有仓库需先登录有权限的GitHub账号。
+从本仓库 [Releases](https://github.com/Aris-qin/openclaw-fact-infra/releases) 下载 `openclaw-plugin-fact-infra-3.0.1.tgz` 和 `SHA256SUMS`。公开 Release 可直接下载，无需访问任何项目数据。
 
 ```sh
 sha256sum -c SHA256SUMS
